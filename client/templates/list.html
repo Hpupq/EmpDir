@@ -1,5 +1,5 @@
-<div class="panel panel-default" ng-init="getEmployees()">
-	<div class="panel-heading">
+<div class="panel panel-default"  ng-init="getEmployees()">
+	<div class="panel-heading" style="background-color: darkorange;font:caption">
 	  <p class="panel-title"><span style="color:#5bc0de;" 
 class="glyphicon glyphicon-list"> </span> Employees List</p>
 	</div>
@@ -25,9 +25,9 @@ class="glyphicon glyphicon-list"> </span> Employees List</p>
 				<td>{{employee.dob | date:'yyyy-MM-dd'}}</td>
 
 			  <td> 
-			    <a href="#/employees/{{employee._id}}/show" class="btn btn-info"> Show  </a>
-			    <a href="#/employees/{{employee._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
-			  	<a ng-click="deleteEmployee(employee._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			    <a href="#/employees/{{employee._id}}/show" class="btn btn-info" style="background-color: chartreuse"> Show  </a>
+			    <a href="#/employees/{{employee._id}}/edit" class="btn btn-success" style="background-color: blueviolet"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  	<a ng-click="deleteEmployee(employee._id)" class="btn btn-danger" ><span class="glyphicon glyphicon-trash"> </span> Delete </a>
 			  </td>
 			</tr>
 			</tbody>

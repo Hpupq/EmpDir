@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MEAN CRUD</title>
+	<title>Employees Directory</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="style.css" rel="stylesheet">
 	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
@@ -14,35 +14,22 @@
 	  <script type="text/javascript" src="plugins/moment/moment.min.js"></script>
 	  <script type="text/javascript" src="plugins/datetimepicker/bootstrap-datetimepicker.min.js"></script>	  
       
-	<script>
-			$(function(){	
-				$(".datepicker").datepicker({
-  onSelect: function() {
-   alert(hi);
-  }
-});
-});
-		 </script>
 </head>
 <body>
 
-<div class="container">
+<div class="container" style="background-color: aqua;font:caption">
 	<div class="row">
 		<div class="header clearfix">
 			<nav>
 			  <ul class="nav nav-pills pull-right">
-			    <li role="presentation" class="active"><a href="#/employees"><span class="glyphicon glyphicon-th-list"> </span> Employee List</a></li>
-			    <li role="presentation"><a href="#/employees/create"> 
-			    <span class="glyphicon glyphicon-plus"> </span>	Add New Employee</a></li>
+			    <li role="presentation" class="active"><a href="#/employees"><span class="glyphicon glyphicon-th-list"> </span> Employees</a></li>
+			    <li role="presentation" style= "background-color:darkorange;"><a href="#/employees/create"> 
+			    <span class="glyphicon glyphicon-plus" style= "background-color:darkorange"> </span>	Add Employee</a></li>
 			  </ul>
 			</nav>
-			<h3 class="text-muted">Simple MEAN web Application using CRUD operation</h3>
+			<h3 class="text-muted" >Employees Directory</h3>
 		</div>
 		<div ng-view></div>
-		
-		<footer class="footer well well-sm">
-		    <p>© 2016 Tutplus24</p>
-		</footer>
 
 	</div>
 </div>

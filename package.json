@@ -1,13 +1,13 @@
 {
-  "name": "empappv2",
+  "name": "Employee Dir",
   "version": "1.0.0",
-  "description": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
-  "main": "readme.js",
+  "description": "Node js MongoDB Employee Dir",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "sikandar rakib",
+  "author": "Harish pUppala",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
